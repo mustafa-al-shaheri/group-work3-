@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+ 
+ class animals{
+
+     constructor(livingPlace,skin,movment,food,color,image){
+         this.livingPlace=livingPlace,
+         this.skin=skin,
+         this.movment=movment,
+         this.food=food,
+         this.color=color,
+         this.image = image
+     }
+ }
+
+ class reptials extends animals{
+
+     constructor(livingPlace,skin,movment,food,skinThickness,numberOfLegs,color, image){
+        super(livingPlace,skin,movment,food,color,image)
+     this.skinThickness=skinThickness,
+     this.numberOfLegs=numberOfLegs
+    
+     }
+     
+ }
+
+ class birds extends animals{
+
+     constructor(livingPlace,skin,movment,food,featherColor,birdNature,beak,color, image){
+     super(livingPlace,skin,movment,food,color,image)
+     this.featherColor=featherColor,
+     this.birdNature=birdNature,
+     this.beak=beak
+ 
+      }
+}
+ 
+ class mamumals{
+constructor(livingPlace,skin,movment,food,numberLegs,wildness,color, image){
+    super(livingPlace,skin,movment,food,color,image)
+    this.numberLegs=numberLegs;
+    this.wildness=wildness
+   
+}
+
+ }
+
+let camiliant =new reptials("land","skin","crowl","meat","veryThick","four")
+
+let tweet = new birds("sky", "feathers", "flies", "wheat", "blue", "home bird", "small", "blue")
+
+let fox = new mamumals("land","fur", "walks", "meat", "four", "wild", "Brownish Orange")
+
+
+</script>
+
+</body>
+</html>
